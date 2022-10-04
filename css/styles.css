@@ -10,6 +10,7 @@
   --team-background-color: #f5f4fa;
   --accent-background-color: #2196f3;
   --hover-background-color: #188ce8;
+  --filter-background-color: #f5f4fa;
 }
 
 body {
@@ -37,6 +38,26 @@ body {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
+}
+
+.conteiner {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 2px solid tomato;
+}
+
+.btn {
+  display: inline-block;
+  border: 1px solid transparent;
+  text-align: center;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
 }
 
 /* ----------------------Header------------------------- */
@@ -88,19 +109,29 @@ body {
 
 .hero {
   background-color: var(--sacondary-background-color);
+  padding: 200px 0;
+  text-align: center;
 }
 
 .hero-title {
+  margin: 0 auto 30px;
+  width: 696px;
+  height: 120px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--wite-color);
+
+  background-color: tomato;
 }
 
 .hero-btn {
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 216px;
+  height: 50px;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -220,6 +251,7 @@ body {
   line-height: 1.62;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
+  background-color: var(--filter-background-color);
   cursor: pointer;
 }
 .filter-btn:hover,
