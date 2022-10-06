@@ -13,9 +13,28 @@
   --filter-background-color: #f5f4fa;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
 body {
   font-family: "Roboto", sans-serif;
-  font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -40,9 +59,8 @@ body {
   margin: -1px;
 }
 
-.conteiner {
-  margin-left: auto;
-  margin-right: auto;
+.container {
+  margin: 0 auto;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -56,8 +74,7 @@ body {
 }
 
 .list {
-  padding: 0;
-  margin: 0;
+  list-style: none;
 }
 
 /* ----------------------Header------------------------- */
@@ -65,6 +82,7 @@ body {
 .header {
   padding-top: 24px;
   padding-bottom: 25px;
+  border-bottom: 1px solid #ececec;
 }
 
 .accent-logo {
@@ -80,7 +98,6 @@ body {
 }
 
 .navigation-list {
-  list-style: none;
 }
 
 .navigation-item {
@@ -95,7 +112,6 @@ body {
 }
 
 .contacts-list {
-  list-style: none;
 }
 
 .contacts-item {
@@ -121,7 +137,6 @@ body {
 }
 
 .hero-title {
-  margin-top: 0;
   margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
@@ -154,19 +169,16 @@ body {
 /* ---------------------------------Переваги------------------------------- */
 
 .advantages {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding: 94px 0;
 }
 
 .advantages-list {
-  list-style: none;
 }
 
 .advantages-item {
 }
 
 .advantages-subtitle {
-  margin-top: 0;
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
@@ -176,8 +188,6 @@ body {
 }
 
 .advantages-text {
-  margin-top: 0;
-  margin-bottom: 0;
 }
 
 /* -----------------------------------Work------------------------------ */
@@ -187,7 +197,6 @@ body {
 }
 
 .work-title {
-  margin-top: 0;
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -197,7 +206,6 @@ body {
 }
 
 .work-list {
-  list-style: none;
 }
 
 /* ----------------------------------Team------------------------------ */
@@ -208,7 +216,6 @@ body {
 }
 
 .team-title {
-  margin-top: 0;
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -218,7 +225,6 @@ body {
 }
 
 .team-list {
-  list-style: none;
 }
 
 .team-item {
@@ -231,19 +237,18 @@ body {
 }
 
 .team-subtitle {
-  margin-top: 0;
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+  text-align: center;
   color: var(--secondary-color);
 }
 
 .team-text {
-  margin-top: 0;
-  margin-bottom: 0;
   font-size: 16px;
   line-height: 1.19;
+  text-align: center;
 }
 
 /* -----------------------------------Footer------------------------ */
@@ -272,7 +277,6 @@ body {
 }
 
 .address-list {
-  list-style: none;
 }
 
 .address-primary {
@@ -283,7 +287,7 @@ body {
   color: var(--sacondary-wite-color);
 }
 
-.address-item:nth-child(-n + 2) {
+.address-item:not(:last-child) {
   margin-bottom: 9px;
 }
 
@@ -302,7 +306,6 @@ body {
 
 .portfolio-filter {
   margin-bottom: 50px;
-  list-style: none;
 }
 
 .filter-btn {
@@ -319,6 +322,7 @@ body {
   background-color: var(--filter-background-color);
   cursor: pointer;
 }
+
 .filter-btn:hover,
 .filter-btn:focus {
   color: var(--wite-color);
@@ -326,20 +330,19 @@ body {
 }
 
 .portfolio-list {
-  list-style: none;
 }
 
 .portfolio-item {
-  padding-bottom: 20px;
-  background-color: teal;
 }
 
 .portfolio-img {
-  margin-bottom: 20px;
+}
+
+.portfolio-item-box {
+  padding: 20px 24px;
 }
 
 .portfolio-subtitle {
-  margin-top: 0;
   margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
@@ -349,8 +352,6 @@ body {
 }
 
 .portfolio-text {
-  margin-top: 0;
-  margin-bottom: 0;
   font-size: 16px;
   line-height: 1.88;
   color: var(--primary-color);
